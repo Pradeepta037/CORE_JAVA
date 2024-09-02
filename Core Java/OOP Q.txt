@@ -1,0 +1,161 @@
+1. Create a default class Book, inside book create parameterized constructor, 
+a void method display(). Create public class Main3 and 
+print the attributes of book through display().
+
+class Book {
+    String title;
+    String author;
+    int year;
+
+    // Parameterized constructor
+    Book(String t, String a, int y) {
+        title = t;
+        author = a;
+        year = y;
+    }
+
+    // Method to display attributes of the book
+    void display() {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Year: " + year);
+    }
+}
+
+public class Main3 {
+    public static void main(String[] args) {
+        // Creating a Book object using the parameterized constructor
+        Book book = new Book("Introduction to Core JAVA", "Balagurusamy", 1985);
+        // Displaying the attributes of the book
+        book.display();
+    }
+}
+
+
+2. Create a default constructor with class name Student, Inside student
+create display() method and create a public class Main4 and print the attributes of the 
+student using display().
+
+class Student {
+    String name;
+    int age;
+    boolean IsStudent;
+
+    // Method to display attributes of the student
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Student: " + IsStudent);
+    }
+}
+
+public class Main4 {
+    public static void main(String[] args) {
+        // Creating a Student object using the default constructor
+        Student student = new Student();
+        // Displaying the attributes of the student
+        student.display();
+    }
+}
+
+
+3. Create default class Rectangle, inside rectangle create a no-arg constructor, 
+and create a constructor with two parameter (length, breadth), create methods
+display() and  area(). Create a public class Main5  and 
+print the attributes of recangle and its area through display(). 
+
+class Rectangle {
+    double length;
+    double breadth;
+
+    // No-arg constructor
+    Rectangle() {
+        length = 0;
+        breadth = 0;
+    }
+
+    // Constructor with two parameters
+    Rectangle(double l, double b) {
+        length = l;
+        breadth = b;
+    }
+
+    // Method to display attributes of the rectangle
+    void display() {
+        System.out.println("Length: " + length);
+        System.out.println("Breadth: " + breadth);
+        System.out.println("Area: " + area());
+    }
+
+    // Method to calculate the area of the rectangle
+    double area() {
+        return length * breadth;
+    }
+}
+
+public class Main5 {
+    public static void main(String[] args) {
+        // Creating a rectangle using the no-arg constructor
+        Rectangle rect1 = new Rectangle();
+        System.out.println("Rectangle 1:");
+        rect1.display();
+
+        // Creating a rectangle using the constructor with parameters
+        Rectangle rect2 = new Rectangle(10.5, 5.5);
+        System.out.println("\nRectangle 2:");
+        rect2.display();
+    }
+}
+
+4. Create a Employee class, inside employee create a parameterized constructor
+(Name, Id, Salary) and a void display() method. Inside Public class Main6, traverse
+all the attributes of the employee.
+
+5. Create a class BankAccount with attributes such as AccountHolderName, 
+AccountNumber, Balance. Inside BankAccount use constructor overloading
+concept and build a void display() method. Create a public class Main7, Inside Main7
+display all the propoties of a Account holder.
+
+6. Create a class Pen with parameterized constructor (Brand, color) and 
+a void display() method. Inside Public class Main8, create Minimum 5 types of pen 
+and display it.
+
+7. Create a class Laptop and Inside Laptop use constructor overloading
+concept and build a void display() method. Create a public class Main9 and 
+Inside Main9 initialize objects using constructor and display it.
+
+8. Create a class Student with attributes such as Name, Age, Gender. Inside 
+Student use constructor overloading concept and build a void display() method. 
+Create a public class Main10, Inside Main10 display all the propoties of a Student.
+
+
+11. Create a Mobile class with constructors such as No-arg, two arguments, 
+three arguments. and create a void display() method. Inside Main11 public class,
+traverse all the data of the Mobile.
+
+12. Create a Calculator with only features Addition and Multiplication. Use 
+Method Overloading Concept to calculate first interger then double values.
+Inside Main12 public class, display the result.
+
+13. Create a class Volume with an overloaded method calculateVolume 
+to calculate the volume of a cube, a rectangular box, and a cylinder. Display 
+results in the public class Main13.
+
+14. Create a class Counter with a static variable count that increments 
+every time When an object is created.
+
+15. Create a class MathOperations with a static method square() that 
+returns the square of a number.
+
+16. Create a class Utility with a static block that prints 
+"Static block executed" and a static method printMessage().
+
+17. Create a class Rectangle with instance variables length and 
+width. Use this keyword to invoke the constructor with the same 
+parameter names.
+
+18. Create a class Employee with instance variables id and name. 
+Use the this keyword to pass the current object as an argument in a 
+method call.
+
+19. 
